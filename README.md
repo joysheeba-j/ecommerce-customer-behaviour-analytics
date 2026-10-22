@@ -1,44 +1,63 @@
-# E-commerce Customer Behaviour Analytics Using Big Data
 
-## Project Overview
+# E-Commerce Customer Behaviour Analytics Using Big Data
 
-This project analyzes e-commerce retail transactions to identify sales trends, product performance, and customer purchasing behaviour using Python and Apache Spark (PySpark).
+**A data analytics project using Python, Apache Spark, and customer segmentation techniques to investigate e-commerce purchasing patterns and business performance.**
 
-The objective is to transform raw transaction data into actionable business insights and demonstrate a reproducible data analytics workflow.
+## Overview
 
-## Objectives
+E-commerce transaction data can reveal valuable patterns in customer spending, product demand, sales performance, and purchasing frequency. This project develops an analytical workflow for transforming retail transaction records into actionable business insights using Python and Apache Spark.
 
-- Clean and validate retail transaction data.
-- Analyze revenue and sales trends over time.
+## Business Objectives
+
+- Analyze revenue trends and sales performance over time.
 - Identify top-performing products and countries.
-- Measure customer purchase frequency and spending.
-- Explore repeat-purchase behaviour and customer segmentation.
-- Present findings through visualizations and, if time permits, a Power BI dashboard.
+- Examine customer purchasing frequency and spending behaviour.
+- Segment customers using Recency, Frequency, and Monetary (RFM) analysis.
+- Develop data-driven recommendations to support business decisions.
 
 ## Technology Stack
 
-- Python
-- Apache Spark (PySpark)
-- Jupyter notebooks
-- Git and GitHub
-- Power BI (planned)
+| Technology | Purpose |
+|---|---|
+| Python | Data analysis and scripting |
+| Apache Spark (PySpark) | Data processing and transformation |
+| Pandas | Supporting data manipulation |
+| Matplotlib | Data visualization |
+| Power BI | Business intelligence and dashboarding |
+| Git and GitHub | Version control and project documentation |
 
 ## Dataset
 
-The project will use the UCI Online Retail dataset, which contains historical retail transaction records.
+**UCI Online Retail Dataset**
 
-Dataset source: https://archive.ics.uci.edu/dataset/352/online+retail
+Source: https://archive.ics.uci.edu/dataset/352/online+retail
 
-The raw dataset will not be committed to this repository. Instructions for obtaining it will be documented here.
+The dataset contains historical transactions from a UK-based online retailer. It provides transaction identifiers, product descriptions, quantities, prices, timestamps, and customer information.
 
-## Project Status
+The analysis focuses on purchasing behaviour recorded in transaction data, rather than website browsing or clickstream activity.
 
-In progress. Analysis, results, visualizations, and implementation details will be added as the project develops.
+## Analytical Scope
+
+1. **Data preparation:** Handle missing values, cancelled transactions, and invalid records.
+2. **Exploratory analysis:** Examine transaction patterns and the structure of the dataset.
+3. **Sales analytics:** Calculate revenue and investigate trends over time.
+4. **Product and geographic analysis:** Compare product performance and sales across countries.
+5. **Customer analytics:** Measure spending, purchase frequency, and repeat purchasing.
+6. **Customer segmentation:** Apply RFM metrics to distinguish customer groups.
+7. **Business intelligence:** Present findings through visualizations and, where feasible, a Power BI dashboard.
+
+## Business Value
+
+The analytical workflow is designed to help identify high-value customers, understand product demand, recognize sales trends, and support customer-retention and marketing decisions.
 
 ## Reproducibility
 
-The project will include setup instructions, data-processing code, and documentation so that the analysis can be reproduced.
+The project uses Python-based tools and Apache Spark. The analysis will be documented with setup instructions, processing logic, and the outputs required to reproduce the findings.
 
-## Limitations
+## Repository Structure
 
-This dataset contains transaction records rather than website clickstream events. Conclusions will therefore focus on purchasing behaviour, not browsing sessions or abandoned carts.
+The repository will organize source code, documentation, visualizations, and dashboard assets separately to support readability and maintainability.
+
+## Data and Scope Limitations
+
+The dataset represents historical transactions and does not capture website sessions, browsing behaviour, or abandoned carts. Findings are therefore limited to behaviour observable from purchase records.
