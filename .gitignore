@@ -1,0 +1,27 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Dataset files
+data/raw/
+data/processed/
+
+# Ignore generated outputs except publishable charts
+outputs/*
+!outputs/figures/
+!outputs/figures/**
+
+# Local configuration
+.env
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
